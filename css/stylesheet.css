@@ -1,0 +1,157 @@
+@charset "utf-8";
+@import url("./normalize.css");
+@import url("./reset.css");
+@import url("./fonts.css");
+
+/* 본문스타일 */
+
+html {
+  font-size: 10px;
+}
+
+body {
+  color: #181818;
+  font-size: 1.4rem;
+  /* font-family: Georgia, 'Times New Roman', Times, serif */
+  font-family: "Noto Sans Regular", sans-serif;
+  background-color: #fff
+}
+
+
+/* 링크스타일 */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #f00;
+  outline: 3px solid blue
+}
+
+
+/* 기본 box-sizing 재설정 */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  /* '*' 전체 선택자는 성능 저하를 낳을 수 있으니 남발하지 말자 */
+}
+
+.wrapper {
+  background-color: gray;
+  height: 100vh;
+}
+
+
+/* 선택자의 그룹핑(grouping) 방식 */
+
+.header,
+.visual,
+.main-content,
+.slogan,
+.footer {
+  width: 940px;
+  margin: 0 auto;
+}
+
+
+/* 헤더 */
+
+.header {
+  background-color: yellow;
+  padding: 0 30px;
+  position: relative;
+}
+
+
+/* 로고 */
+
+.logo {
+  position: absolute;
+  top: 40px;
+  left: 60px;
+}
+
+
+/* 안내링크 */
+
+.info-menu {
+  display: flex;
+  justify-content: flex-end;
+  text-transform: uppercase;
+  position: relative;
+  right: -10px;
+}
+
+.info-menu li::after {
+  content: ":";
+}
+
+.info-menu li:last-child::after {
+  content: "";
+}
+
+.info-menu a {
+  display: inline-block;
+  /* background-color: lime; */
+  padding: 8px 10px;
+}
+
+.visual {
+  background-color: pink;
+  height: 120px;
+}
+
+.main-content {
+  background-color: red;
+  padding: 30px;
+  /* overflow: hidden; */
+  min-height: 400px;
+  /* flex를 이용한 방법 */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+
+/* .main-content::after {
+  content: "";
+  background-color: yellow;
+  display: block;
+  clear: both;
+} */
+
+.group {
+  /* margin: 30px 15px; */
+}
+
+.group1 {
+  background-color: aqua;
+  width: 250px;
+  /* float: right; */
+}
+
+.group2 {
+  background-color: olive;
+  width: 380px;
+  /* float: left */
+}
+
+.group3 {
+  width: 190px;
+  background-color: orange;
+  /* float: left; */
+}
+
+.slogan {
+  background-color: lime;
+}
+
+.footer {
+  background-color: skyblue;
+}
