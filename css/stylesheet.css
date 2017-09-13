@@ -3,6 +3,22 @@
 @import url("./reset.css");
 @import url("./fonts.css");
 
+/* 숨긴 콘텐츠 */
+
+.readable-hidden {
+  background-color: red;
+  /* display: none; */
+  /* 이걸 쓰면 안 됨 읽을 수 있지만 보이지 않게 해야하는데 이건 아예 읽을 수 없게 하기 때문 */
+  position: absolute;
+  left: -9999em;
+  /* font-size: 0;
+  line-height: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px 0 0 -1px; */
+}
+
+
 /* 본문스타일 */
 
 html {
@@ -62,9 +78,12 @@ a:focus {
 /* 헤더 */
 
 .header {
-  background-color: yellow;
-  padding: 0 30px;
+  background-color: #fff;
+  padding: 0 30px 30px;
   position: relative;
+  border-radius: 0 0 25px 25px;
+  /* border-radius: 0 0 50px 50px/ 0 0 15px 15px; */
+  /* 앞에 건 x축, 뒤에 건 y축 */
 }
 
 
@@ -72,7 +91,7 @@ a:focus {
 
 .logo {
   position: absolute;
-  top: 40px;
+  top: 45px;
   left: 60px;
 }
 
@@ -99,6 +118,29 @@ a:focus {
   display: inline-block;
   /* background-color: lime; */
   padding: 8px 10px;
+}
+
+
+/* 메인 메뉴 */
+
+.main-menu {
+  /* background-color: orange;
+  background-image: linear-gradient(to bottom, red 0%, blue 30%, green 100%); */
+  background: #db9d29 linear-gradient(to bottom, #ffcf32 0%, #db9d29 35%, #db9d29 70%, #ffcf32 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  border-top: 2px solid #000;
+  border-radius: 0 0 5px 5px;
+  height: 47px;
+  padding-left: 225px;
+}
+
+.main-menu span {
+  color: #fff;
+  font: 1.6rem "Noto Sans Bold", sans-serif;
+}
+
+.sub-menu {
+  background: yellow;
 }
 
 .visual {
