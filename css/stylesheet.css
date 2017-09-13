@@ -134,13 +134,61 @@ a:focus {
   padding-left: 225px;
 }
 
+.main-menu>li {
+  float: left;
+}
+
 .main-menu span {
+  display: block;
+  cursor: pointer;
   color: #fff;
   font: 1.6rem "Noto Sans Bold", sans-serif;
+  line-height: 45px;
+  padding: 0 20px;
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
+  text-shadow: 1px 0 0px #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000;
+}
+
+.main-menu span:hover,
+.main-menu span:focus {
+  color: yellow;
+  outline: 0;
+}
+
+.main-menu span:hover::after,
+.main-menu span:focus::after {
+  display: block;
+  content: "";
+  border-top: 2px solid #000;
 }
 
 .sub-menu {
   background: yellow;
+  position: absolute;
+}
+
+.about-html {
+  display: block;
+}
+
+.about-css {
+  display: none;
+}
+
+.web-standards {
+  display: none;
+}
+
+.web-accessibility {
+  display: none;
+}
+
+.qna {
+  display: none;
+}
+
+.archive {
+  display: none;
 }
 
 .visual {
