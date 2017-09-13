@@ -2,6 +2,7 @@
 @import url("./normalize.css");
 @import url("./reset.css");
 @import url("./fonts.css");
+@import url("./fontello");
 
 /* 숨긴 콘텐츠 */
 
@@ -136,6 +137,7 @@ a:focus {
 
 .main-menu>li {
   float: left;
+  position: relative;
 }
 
 .main-menu span {
@@ -165,10 +167,35 @@ a:focus {
 .sub-menu {
   background: yellow;
   position: absolute;
+  top: 47px;
+  font-size: 0;
+  white-space: nowrap;
+}
+
+.sub-menu a {
+  padding: 5px 10px 5px 0;
+  margin-right: 5px;
+}
+
+.sub-menu a::before {
+  content: "\e804";
+  font-family: "fontello";
+  /* 아이콘 폰트 자체의 문제이기 때문에 어쩔 수 없이 집어넣는 코드 */
+  margin-right: 10px;
+}
+
+.sub-menu a:hover::before {
+  content: "\e802"
+}
+
+.sub-menu li,
+.sub-menu a {
+  display: inline-block;
+  font-size: 1.4rem;
 }
 
 .about-html {
-  display: block;
+  display: none;
 }
 
 .about-css {
@@ -181,14 +208,17 @@ a:focus {
 
 .web-accessibility {
   display: none;
+  right: 0;
 }
 
 .qna {
   display: none;
+  right: 0;
 }
 
 .archive {
   display: none;
+  right: 0;
 }
 
 .visual {
