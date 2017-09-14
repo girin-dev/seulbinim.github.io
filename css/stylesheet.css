@@ -342,7 +342,8 @@ a:focus {
 
 /* 로그인 */
 
-.login {
+
+/* .login {
   background: radial-gradient(circle at right top, #efc62f, #d88e04);
   border-radius: 5px;
   padding: 10px;
@@ -439,16 +440,22 @@ a:focus {
   position: relative;
   top: 2px;
   color: #f00;
-}
+} */
 
 
 /* 내가 짰던 코드 */
 
+.login,
+.login-heading {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
 
-/* .login-heading {
+.login-heading {
   background-color: orange;
   display: block;
-  padding: 10px
+  padding: 10px 10px 10px 20px;
+  border-radius: 5px;
 }
 
 .login {
@@ -459,27 +466,25 @@ a:focus {
 .login-form {
   background-color: white;
   width: 230px;
-  flex-wrap: wrap;
   margin: 0 10px 0 10px;
-  padding: 5px;
+  padding: 10px 10px 10px 10px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
 
 .login-form>fieldset {
-  margin: 0 3px 0 5px;
   border-bottom: 1px solid gray;
+  padding: 0 0 10px 0;
 }
 
 .user-email,
 .user-pw {
   float: left;
-  margin-top: 4px;
 }
 
 #user-email,
 #user-pw {
-  width: 95px;
+  width: 100px;
 }
 
 #user-email {
@@ -490,7 +495,8 @@ a:focus {
   color: white;
   background-color: red;
   padding: 15px 5px;
-  margin: 5px 0 5px 5px;
+  margin: 0 0 0 5px;
+  border: 0px;
   border-radius: 5px;
 }
 
@@ -503,7 +509,7 @@ a:focus {
   justify-content: space-around;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-} */
+}
 
 .slogan {
   background-color: lime;
