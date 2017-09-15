@@ -351,7 +351,7 @@ a:focus {
 
 .login-heading {
   color: #ff0;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-family: "Noto Sans Bold";
   margin: 0 0 10px 10px;
 }
@@ -551,6 +551,65 @@ a:focus {
 /* 웹 관련 용어 */
 
 .term {
+  background: linear-gradient(to bottom, #eee, #ccc);
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.term-heading {
+  font-family: "Noto Sans Bold";
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.term-list {
+  background: yellow;
+}
+
+.term-list dt:nth-child(6n+4),
+.term-list dd:nth-child(6n+6) {
+  float: left;
+}
+
+.term-list dd:nth-child(6n+5) {
+  float: right;
+}
+
+.term-list::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.term-list-title,
+.term-list-brief {
+  float: right;
+  width: 145px;
+}
+
+.term-list-title {
+  background: lime;
+  color: #296897;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.term-list-thumbnail {
+  background: pink;
+  float: left;
+}
+
+.term-list-thumbnail img {
+  display: block;
+}
+
+.term-list-brief {
+  background: orange;
+}
+
+
+/* .term {
   background: no-repeat 15px 50%, linear-gradient(to top, #ccc, #eee);
   margin-top: 20px;
   padding: 15px;
@@ -591,7 +650,7 @@ a:focus {
   float: right;
   width: 145px;
   font-family: "Noto Sans Regular";
-}
+} */
 
 
 /* 슬로건 */
