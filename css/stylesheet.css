@@ -563,10 +563,6 @@ a:focus {
   margin-bottom: 10px;
 }
 
-.term-list {
-  background: yellow;
-}
-
 .term-list dt:nth-child(6n+4),
 .term-list dd:nth-child(6n+6) {
   float: left;
@@ -589,23 +585,17 @@ a:focus {
 }
 
 .term-list-title {
-  background: lime;
   color: #296897;
   font-weight: bold;
   margin-bottom: 5px;
 }
 
 .term-list-thumbnail {
-  background: pink;
   float: left;
 }
 
 .term-list-thumbnail img {
   display: block;
-}
-
-.term-list-brief {
-  background: orange;
 }
 
 
@@ -650,6 +640,85 @@ a:focus {
   float: right;
   width: 145px;
   font-family: "Noto Sans Regular";
+} */
+
+
+/* 검색 */
+
+.search {
+  background: linear-gradient(to top, #eee, #ccc);
+  border: 1px solid #aaa;
+  border-bottom: #fff;
+  border-radius: 15px 15px 0 0;
+  padding: 20px 25px 10px;
+}
+
+.search-form {
+  background: yellow;
+}
+
+.search-form fieldset {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-form label,
+.search-form input,
+.btn-search {
+  vertical-align: middle;
+}
+
+.search-form label::before {
+  content: "z";
+  font-family: "webcafeIcon";
+  position: relative;
+  top: 2px;
+}
+
+.search-form input {
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  padding: 0 0 0 5px;
+  height: 22px;
+  /* width: calc( 100% - 130px); */
+}
+
+.btn-search {
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  padding: 0 10px;
+  color: #fff;
+  background: linear-gradient(to bottom, #333, #999);
+  height: 22px;
+}
+
+
+/* .search {
+  background: yellow;
+  padding: 25px;
+  border-top: 1px solid grey;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+  border-radius: 10px 10px 0 0;
+  background: linear-gradient(to bottom, #aaa 0%, #fff 95%, #fff 100%);
+}
+
+.search-form {}
+
+.search-form fieldset {
+  display: flex;
+  justify-content: space-between;
+}
+
+#search {
+  width: 180px;
+}
+
+.btn-search {
+  border: 1px solid grey;
+  border-radius: 5px;
+  background: linear-gradient(to bottom, #000 0%, #aaa 60%, #ccc 100%);
+  color: white;
 } */
 
 
