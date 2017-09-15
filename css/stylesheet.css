@@ -296,6 +296,9 @@ a:focus {
   width: 330px;
 }
 
+
+/* 메인 콘텐츠 */
+
 .main-content {
   background-color: #fff;
   border-radius: 25px 25px 0 0;
@@ -322,20 +325,17 @@ a:focus {
 }
 
 .group1 {
-  background-color: aqua;
   width: 250px;
   /* float: right; */
 }
 
 .group2 {
-  background-color: olive;
   width: 380px;
   /* float: left */
 }
 
 .group3 {
   width: 190px;
-  background-color: orange;
   /* float: left; */
 }
 
@@ -511,9 +511,97 @@ a:focus {
   border-bottom-right-radius: 5px;
 } */
 
+
+/* 유효성 검사 배너 링크 */
+
+
+/* 내가 짠 코드 */
+
+
+/* .validation {
+  margin-top: 20px;
+}
+
+.validation-list li {
+  padding: 5px 0 4px 40px;
+  margin-bottom: 10px;
+  border: 1px solid grey;
+  border-radius: 20px;
+  background: url("images/validation_icon.png") no-repeat 5%, #db9d29 linear-gradient(to bottom, #fffeff 0%, #cdcdcd 100%);
+  font: 1em "Noto Sans Regular", sans-serif;
+} */
+
+.validation {
+  margin-top: 20px;
+}
+
+.validation li {
+  margin-bottom: 10px;
+}
+
+.validation a {
+  background: url("images/validation_icon.png") no-repeat 15px 50%, linear-gradient(to top, #eee, #ccc);
+  display: block;
+  border: 1px solid #aaa;
+  padding: 5px 10px 5px 45px;
+  border-radius: 20px;
+}
+
+
+/* 웹 관련 용어 */
+
+.term {
+  background: no-repeat 15px 50%, linear-gradient(to top, #ccc, #eee);
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+.term-heading {
+  margin-bottom: 10px;
+  font-family: "Noto Sans Bold";
+  font-size: 1.5rem;
+}
+
+.term-list::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.term-list-title,
+.term-list-thumbnail,
+.term-list-brief {
+  display: inline;
+}
+
+.term-list-title {
+  float: right;
+  padding: 0 71px 3px 0;
+  color: #296897;
+  font-family: "Noto Sans Bold";
+}
+
+.term-list-thumbnail {
+  float: left;
+}
+
+.term-list-brief {
+  float: right;
+  width: 145px;
+  font-family: "Noto Sans Regular";
+}
+
+
+/* 슬로건 */
+
 .slogan {
   background-color: lime;
 }
+
+
+/* 푸터 */
 
 .footer {
   background-color: skyblue;
