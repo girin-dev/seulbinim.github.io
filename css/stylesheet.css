@@ -46,7 +46,7 @@ a {
 a:hover,
 a:focus {
   color: #f00;
-  outline: 2px solid blue
+  /* outline: 2px solid blue */
 }
 
 
@@ -393,7 +393,7 @@ a:focus {
 
 .btn-login {
   position: absolute;
-  top: 0;
+  top: 2px;
   right: 0;
   margin: 0;
   padding: 0 5px;
@@ -646,15 +646,11 @@ a:focus {
 /* 검색 */
 
 .search {
-  background: linear-gradient(to top, #eee, #ccc);
+  background: linear-gradient(to top, #fff, #ccc);
   border: 1px solid #aaa;
   border-bottom: #fff;
   border-radius: 15px 15px 0 0;
   padding: 20px 25px 10px;
-}
-
-.search-form {
-  background: yellow;
 }
 
 .search-form fieldset {
@@ -720,6 +716,266 @@ a:focus {
   background: linear-gradient(to bottom, #000 0%, #aaa 60%, #ccc 100%);
   color: white;
 } */
+
+
+/* 공지사항 및 자료실 */
+
+.board {
+  margin-top: 20px;
+  position: relative;
+}
+
+.board ul,
+.notice-more,
+.pds-more {
+  display: none;
+}
+
+.board-active ul,
+.board-active>a {
+  display: block !important;
+}
+
+.notice-more,
+.pds-more {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  padding: 8px;
+}
+
+.notice-heading,
+.pds-heading {
+  /* 탭을 플로트로 배치했을 경우 */
+  /* float: left; */
+  display: inline-block;
+  background: linear-gradient(to bottom, #eee, #ccc);
+  cursor: pointer;
+  border: 1px solid #aaa;
+  border-radius: 5px 5px 0 0;
+  padding: 5px 15px;
+  color: #666;
+  position: absolute;
+  top: 0;
+}
+
+.notice-heading {
+  left: 0;
+}
+
+.pds-heading {
+  left: 83px;
+}
+
+.board-active .notice-heading,
+.board-active .pds-heading {
+  background: #fff!important;
+  color: #f00;
+  border-color: #f00 #f00 #fff #f00;
+}
+
+.notice-list,
+.pds-list {
+  /* 목록을 레이어로 배치했을 경우 */
+  /* position: absolute;
+  top: 45px;
+  left: 0;
+  width: 100%; */
+  /* 목록이 많아져도 칸이 저절로 넓어짐 */
+  padding-top: 45px;
+  min-height: 200px;
+}
+
+.notice-list li,
+.pds-list li {
+  margin: 5px 0;
+}
+
+.notice-list li::before,
+.pds-list li::before {
+  content: "r";
+  font-family: "webcafeIcon";
+  position: relative;
+  top: -3px;
+}
+
+.notice-list a,
+.pds-list a {
+  width: 285px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.board time {
+  float: right;
+}
+
+.icon-more::before {
+  content: "p";
+  font-family: "webcafeIcon";
+  position: relative;
+  top: 2px;
+  color: hsla(120, 30%, 50%, 1);
+  margin-right: 5px;
+}
+
+
+/* 내가 짠 코드, notice만 짜고 있었음 */
+
+
+/* .board {
+  margin-top: 20px;
+  position: relative;
+  height: 180px;
+}
+
+.board-active {
+  ;
+}
+
+.notice {
+  background: yellow;
+}
+
+.notice-heading {
+  float: left;
+  border: 1px solid grey;
+  border-bottom: 0px;
+  border-radius: 10px 10px 0 0;
+  background: linear-gradient(to bottom, #eee, #ccc);
+  padding: 5px 10px;
+}
+
+.notice-heading:active {
+  background: white;
+  border: 1px solid orange;
+  border-bottom: 0px;
+  border-radius: 10px 10px 0 0;
+}
+
+.notice-list {
+  position: absolute;
+  top: 40px;
+  left: 10px;
+}
+
+.notice-list li {
+  margin: 5px 0;
+}
+
+.notice-list li::before {
+  content: "r";
+  font-family: "webcafeIcon";
+  position: relative;
+  top: 2px;
+}
+
+.notice-list time {
+  float: right;
+}
+
+.notice-more {
+  position: absolute;
+  right: 0px;
+  padding: 5px 10px;
+}
+
+.icon-more::before {
+  content: "p";
+  font-family: "webcafeIcon";
+  position: relative;
+  top: 2px;
+}
+
+.pds {
+  background: skyblue;
+}
+
+.pds-heading {
+  float: left;
+  border: 1px solid grey;
+  border-bottom: 0px;
+  border-radius: 10px 10px 0 0;
+  background: linear-gradient(to bottom, #eee, #ccc);
+  padding: 5px 10px;
+}
+
+.pds-list {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 10px;
+}
+
+.pds-more {
+  position: absolute;
+  right: 0px;
+  padding: 5px 10px;
+} */
+
+
+/* 새소식 */
+
+.news {
+  margin-top: 10px;
+  position: relative;
+}
+
+.news-heading {
+  font-size: 1.6rem;
+  font-family: "Noto Sans Bold";
+  padding-bottom: 20px;
+}
+
+.news-heading::after {
+  content: "";
+  position: absolute;
+  top: 35px;
+  display: block;
+  width: 80%;
+  height: 1px;
+  background: linear-gradient(to right, #9b9b9b, #eee);
+}
+
+.news-item {
+  padding-left: 130px;
+}
+
+.news-item-heading {
+  font-family: "Noto Sans Bold";
+  font-size: 1em;
+}
+
+.news-item-heading::before {
+  content: "r";
+  font-family: "webcafeIcon";
+}
+
+.news-item-date {
+  ;
+}
+
+.news-item-thumbnail {
+  position: absolute;
+  top: 50px;
+  left: 0px;
+}
+
+.news-item-thumbnail figcaption {
+  padding: 10px 0 10px 18px;
+}
+
+.news-item-brief {
+  ;
+}
+
+.news-more {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 
 
 /* 슬로건 */
