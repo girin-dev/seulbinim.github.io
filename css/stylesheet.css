@@ -7,8 +7,8 @@
 /* 숨긴 콘텐츠 */
 
 .readable-hidden,
-legend {
-  background-color: red;
+legend,
+.a11y {
   /* display: none; */
   /* 이걸 쓰면 안 됨 읽을 수 있지만 보이지 않게 해야하는데 이건 아예 읽을 수 없게 하기 때문 */
   position: absolute;
@@ -18,6 +18,31 @@ legend {
   width: 1px;
   height: 1px;
   margin: -1px 0 0 -1px; */
+}
+
+
+/* 건너뛰기 링크 */
+
+.skip-nav {
+  background: yellow;
+  position: relative;
+  z-index: 10;
+}
+
+.a11y {
+  background: #000;
+  color: #fff;
+  padding: 5px 20px;
+}
+
+.a11y:focus {
+  left: 50%;
+  color: #fff;
+  background: #000;
+  position: absolute;
+  top: 4px;
+  padding: 5px 20px;
+  transform: translateX(-50%);
 }
 
 
